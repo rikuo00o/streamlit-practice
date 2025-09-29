@@ -1,0 +1,12 @@
+site_name: <card games> 
+site_url: https://<rikuo00o>.github.io/<streamlit-practice>/
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - About: adout.md
+  - How to use: How_to_use/High_and_low.md
+repo_url: https://github.com/<yourname>/<repo>
+extra:
+  version:
+    provider: mike
