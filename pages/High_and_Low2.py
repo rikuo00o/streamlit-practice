@@ -2,11 +2,9 @@ import json
 from pathlib import Path
 import random
 import streamlit as st
+from models.High_and_Low_function import load_game_data
 
-# ----Pathを指定して JSONファイルを読み込み ----
-json_path = Path(__file__).parent.parent / "sample_data" / "highlow_round3.json"
-with open(json_path, "r", encoding="utf-8") as f:
-    data = json.load(f)
+data = load_game_data()
 
 st.title("High and Low Game2")
 
@@ -29,7 +27,7 @@ st.write(f"Remaining Deck: {deck}")
 
 if round_num < len(data["rounds"]):
     current_round = data["rounds"][round_num]
-    base_card = current_round["base_card"]
+    base_card = random.choice(deck)
     st.write(f"Base Card: {base_card}")
 
     player_choice = st.radio("Will the next card be Higher or Lower?", ("High", "Drew", "Low"))
