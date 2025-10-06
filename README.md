@@ -6,7 +6,7 @@ pip install requirements.py
 ```
 ## 使い方
 ```bash
-stremlit run card_games_app.py
+stremlit run cards_games_app.py
 ```
 
 ## ゲームの概要
