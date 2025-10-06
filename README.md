@@ -14,3 +14,5 @@ stremlit run card_games_app.py
 1. 始めに1~13までの数字が提示されます
 2. その次に提示される数字がその数字より大きいか小さいかを予測して選択します
 3. これを3回繰り返して正答率を競います
+
+#### 詳しくはこちら(https://rikuo00o.github.io/streamlit-practice/latest/)
